@@ -6,6 +6,9 @@ import 'screens/profile_setup.dart';
 import 'screens/login.dart';
 import 'screens/welcome.dart';
 import 'screens/verification_screen.dart';
+import 'screens/chat.dart'
+import 'screens/payment.dart'
+import 'screens/ride_booked.dart'
 
 void main() {
   runApp(MyApp());
