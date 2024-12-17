@@ -79,7 +79,9 @@ class MyApp extends StatelessWidget {
         '/driverProfile': (context) => DriverProfilePage(),
         '/phoneVerification': (context) => PhoneVerificationScreen(),
         '/setPassword': (context) => SetPasswordScreen(),
-        '/profileSetup': (context) => ProfileSetupScreen(),
+        '/profileSetup': (context) => ProfileSetupScreen(
+            userData: ModalRoute.of(context)!.settings.arguments
+                as Map<String, String>),
         '/login': (context) => LoginScreen(),
         '/verification_screen': (context) => VerificationScreen(),
         '/OfferRidePage': (context) => OfferRidePage(),
